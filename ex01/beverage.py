@@ -6,7 +6,7 @@ class Beverage(pd.Product):
         """
         assign its values to name, price, description, temperature attribute, using super(),
         """
-        super(Beverage, self).__init__(name, price, description)
+        super().__init__(name, price, description)
         self.temperature = temperature
 
     def print_attr(self):
