@@ -4,30 +4,32 @@ import beverage as b
 class Vendingmachine:
     def __init__(self, name, stock):
         """
-        taking a string, an array of Beverage instances as parameters,
-        assign its value to a name attribute and a stock attribute.
+        taking a string, an array of Beverage instances as parameters, assign its value to a name attribute and a stock attribute.
         """
         self.name = name
         self.stock = stock
+
 
     def __str__(self):
         """
         return its name attributes in the format.
         <name attribute> the vending machine
         """
-        return "{0}\n".format(self.name)
+        return f"{self.name} the vending machine"
 
     def sell(self, beverage_name):
         """
         taking a string as a parameter, print a message of your choice.
-        the message differ when there is a Beverage instance
-        named same as product_name in the stock, or not.
+        the message differ when there is a Beverage instance named same as product_name in the stock, or not.
         """
-        self.beverage_name = beverage_name
-        if (self.beverage_name == self.name and self.stock != 0):
-            print("Here is your " + self.beverage_name + "!")
+        dict = {}
+        for i in self.stock:
+            dict[i.name] = i.price
+
+        if beverage_name in dict:
+            print("Here is your " + beverage_name + "!")
         else:
-            print("Sorry! I do not have " + self.beverage_name + "...")
+            print("Sorry! I do not have " + beverage_name + "...")
 
     def ask(self):
         """
