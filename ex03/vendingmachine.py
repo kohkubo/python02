@@ -36,7 +36,7 @@ class Vendingmachine:
         """
         dict = {}
         for i in self.stock:
-            print(f"{i.name}: {i.price}")
+            print(f"{i.name}")
 
     def recommend(self):
         """
