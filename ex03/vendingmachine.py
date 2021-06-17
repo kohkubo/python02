@@ -57,7 +57,7 @@ class Vendingmachine:
         if beverage_name in dict:
             print("Here is your " + beverage_name + "!")
         else:
-            print("Sorry! I do not have " + beverage_name + "...")
+            print("\nsorry, I don't have the product called " + beverage_name)
             self.recommend()
 
     def ask(self):
@@ -66,5 +66,5 @@ class Vendingmachine:
         store the user input,
         then call sell method with the users input as parameter.
         """
-        bname = input("Hello, what would you like?\n")
+        bname = input("would you like something?\n> ")
         self.sell(beverage_name=bname)
