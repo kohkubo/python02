@@ -36,5 +36,5 @@ class Vendingmachine:
         store the user input,
         then call sell method with the users input as parameter.
         """
-        bname = input("Hello, what would you like?\n")
+        bname = input("Hello, what would you like?\n>")
         self.sell(beverage_name=bname)
