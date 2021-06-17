@@ -24,6 +24,8 @@ def main():
 
     vg_test = vg.Vendingmachine(name="mmm", stock=ds)
     print(vg_test.__str__())
+    vg_test.sell(beverage_name="cola")
+    vg_test.sell(beverage_name="test")
     vg_test.ask()
 
 if __name__ == "__main__":

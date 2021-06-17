@@ -9,7 +9,6 @@ class Vendingmachine:
         self.name = name
         self.stock = stock
 
-
     def __str__(self):
         """
         return its name attributes in the format.
