@@ -12,7 +12,7 @@ class Product:
         return its name and description attributes in the format.
         <name attribute> : <description attribute>
         """
-        return "{0} : {1}".format(self.name, self.description)
+        return f"{self.name} : {self.description}"
 
     def print_attr(self):
         """
@@ -21,6 +21,4 @@ class Product:
         price : <price attribute limited to two decimal points>
         description : <description attribute>
         """
-        return "name : {0}\nprice : {1}\ndescription : {2}".format(
-            self.name, self.price, self.description
-        )
+        return f"name : {self.name}\nprice : {self.price}\ndescription : {self.description}"
