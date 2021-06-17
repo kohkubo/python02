@@ -17,6 +17,4 @@ class Beverage(pd.Product):
         description : <description attribute>
         temperature : <temperature attribute>
         """
-        return "name : {0}\nprice : {1}\ndescription : {2}\ntemperature : {3}".format(
-            self.name, self.price, self.description, self.temperature
-        )
+        return f"name : {self.name}\nprice : {self.price}\ndescription : {self.description}\ntemperature : {self.temperature}"
