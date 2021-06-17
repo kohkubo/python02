@@ -3,13 +3,14 @@ import salesperson as sp
 
 
 def main():
-	p = pd.Product()
-	print(p)
+    p = pd.Product()
+    print(p)
 
-	s = sp.Salesperson(name="salesman")
-	print(s)
+    s = sp.Salesperson(name="salesman")
+    print(s)
 
-	print(s.promote())
+    print(s.promote())
 
-if __name__ == '__main__':
-	main()
+
+if __name__ == "__main__":
+    main()
